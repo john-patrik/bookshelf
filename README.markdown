@@ -4,6 +4,7 @@
 * [The Markdown](http://daringfireball.net/projects/markdown) markup language was used for this README.
 * [Great Rails tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book).
 * [RVM - Ruby version management](https://rvm.beginrescueend.com) is awesome.
+* [Rails 3.1 on Heroku](http://devcenter.heroku.com/articles/rails31_heroku_cedar).
 
 # Recommended workflow
 
@@ -18,3 +19,4 @@ Merge with master branch.
 
 Delete the obsolete branch.
     $git branch -d something-new
+
