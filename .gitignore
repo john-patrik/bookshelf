@@ -20,3 +20,6 @@
 *~
 .project
 .DS_Store
+
+# Ignore sensitive files.
+*database.yml

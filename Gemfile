@@ -32,13 +32,13 @@ gem 'therubyracer'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development do
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'rspec-rails'
 end
 
 group :test do
   # Pretty printed test output
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'turn', '0.8.2', :require => false
   gem 'rspec-rails'
   gem 'webrat'
