@@ -6,6 +6,15 @@
 * [RVM - Ruby version management](https://rvm.beginrescueend.com) is awesome.
 * [Rails 3.1 on Heroku](http://devcenter.heroku.com/articles/rails31_heroku_cedar).
 
+# Site plan
+
+## Models
+* User
+* Book
+* Comment
+* Rating
+
+
 # Recommended workflow
 
 ## Branching
@@ -20,3 +29,27 @@ Merge with master branch.
 Delete the obsolete branch.
     $git branch -d something-new
 
+## Testing - Red, Green, Refactor!
+
+Writing the test.
+spec/controllers/pages_controller_spec.rb
+
+>...
+>render_views
+>
+>  describe "GET 'about'" do
+>    it "should be successful" do
+>      get 'about'
+>      response.should be_success
+>    end
+>
+>    it "should have the right title" do
+>      get 'about'
+>      response.should have_selector("title", :content => "Bookshelf")
+>    end
+>  end
+>
+>...
+
+Run the test.
+>$rspec spec/
