@@ -1,9 +1,25 @@
 Bookshelf::Application.routes.draw do
   get "pages/home"
+  get "home" => "pages#home", :as => :home
 
   get "pages/contact"
+  get "contact" => "pages#contact", :as => :contact
 
   get "pages/about"
+  get "about" => "pages#about", :as => :about
+
+  get "pages/signup"
+  get "signup" => "pages#signup", :as => :signup
+
+  get "pages/signin"
+  get "signin" => "pages#signin", :as => :signin
+
+  root :to => "pages#home"
+
+#  match 'books/download/:id' => 'books#download'
+#  resources :categories
+#  match 'categories/:id' => 'categories#show', :as => :category
+#  resources :books
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
